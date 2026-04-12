@@ -16,7 +16,7 @@ if st.session_state.step <= 4:
 
 # --- DIE ECHTE UI (Nach dem System-Neustart) ---
 if st.session_state.step >= 5:
-    st.title("Das Ultimative 'Wir'-Quiz 🕵️‍♀️✨")
+    st.title("Das Ultimative 'Herde'-Quiz 🕵️‍♀️✨")
     st.write("🎧 **Okay, der langweilige Teil ist vorbei. Klick auf Play für die richtige Stimmung!**")
     try:
         st.audio("song.mp3")
@@ -101,11 +101,11 @@ elif st.session_state.step == 4:
         if q4_answer == "Den Laptop zuklappen und mit mir kuscheln":
             # Der dramatische Glitch-Effekt
             glitch_container.error("🚨 KRITISCHER FEHLER: UNBEKANNTER PARAMETER ERKANNT 🚨")
-            time.sleep(2)
+            time.sleep(4)
             glitch_container.warning("⚠️ SYSTEM-ÜBERLASTUNG... BRECHE PRÜFUNG AB...")
-            time.sleep(2)
+            time.sleep(4)
             glitch_container.info("🔄 INITIALLISIERE NEUES PROTOKOLL: 'Echte Fragen' werden geladen...")
-            time.sleep(2.5)
+            time.sleep(4)
             st.balloons()  # Ein kleiner Konfetti-Schock zum Übergang
             st.session_state.step = 5
             st.rerun()
@@ -128,7 +128,7 @@ elif st.session_state.step == 5:
     if st.button("Bestätigen"):
         if q5_answer == "Das offizielle Baybell Emoji 🔴":
             st.success("Richtig. Das weiß doch jeder. 🏆")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 6;
             st.rerun()
         else:
@@ -143,7 +143,7 @@ elif st.session_state.step == 6:
     if st.button("Bestätigen"):
         if q6_answer == "Hänchencurry mit Ananas 🍍":  # Tausche dies mit eurer echten Antwort aus!
             st.success("Korrekt! Fünf Sterne für den Koch. ⭐")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 7;
             st.rerun()
         else:
@@ -159,7 +159,7 @@ elif st.session_state.step == 7:
     if st.button("Bestätigen"):
         if q7_answer == "In den Weinbergen von Hochheim 🍇":  # Tausche dies mit eurer echten Antwort aus!
             st.success("Ich wusste es! Das war seeeeeerh schön. 🥰")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 8;
             st.rerun()
         else:
@@ -174,7 +174,7 @@ elif st.session_state.step == 8:
     if st.button("Bestätigen"):
         if q8_answer == "Tanzen 💃":  # Tausche dies mit eurer echten Antwort aus!
             st.success("Ganz genau. Der beste Tag überhaupt. ❤️")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 9;
             st.rerun()
         else:
@@ -189,7 +189,7 @@ elif st.session_state.step == 9:
     if st.button("Bestätigen"):
         if q9_answer == "Ich checke 😎":  # Tausche dies mit eurer echten Antwort aus!
             st.success("Ich checke auch 😉")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 10;
             st.rerun()
         else:
@@ -204,7 +204,7 @@ elif st.session_state.step == 10:
     if st.button("Bestätigen"):
         if q9_answer == "Was wird. Wir freuen uns. 🤩":  # Tausche dies mit eurer echten Antwort aus!
             st.success("Ich freue mich auch 😉")
-            time.sleep(1.5);
+            time.sleep(4);
             st.session_state.step = 11;
             st.rerun()
         else:
