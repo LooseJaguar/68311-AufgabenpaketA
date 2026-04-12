@@ -10,7 +10,7 @@ if 'step' not in st.session_state:
 # --- DIE FAKE-UNI UI (Wird nur am Anfang angezeigt) ---
 if st.session_state.step <= 4:
     st.title("63811 - Einführung in die Imperative Programmierung")
-    st.subheader("Kapitel 4: Primitve Datentypen")
+    st.subheader("Kapitel 4: Primitive Datentypen")
     st.caption("Matrikelnummer: q1250507 | Studienjahr:Sommersemester 2026 | Sitzung läuft ab in: 14:59")
     st.divider()
 
@@ -264,7 +264,7 @@ elif st.session_state.step == 11:
         with col1:
             if st.button("Ja! 🥰", use_container_width=True):
                 st.balloons()
-                st.success("Test zu 100% bestanden. Lass uns feiern! 🎉❤️")
+                st.success("Test zu 100% bestanden. Ich liebe dich! 🎉❤️")
 
         with col2:
             if st.button("Nein 💀", use_container_width=True):
