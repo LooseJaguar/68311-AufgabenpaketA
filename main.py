@@ -123,7 +123,7 @@ elif st.session_state.step == 4:
 # --- PERSÖNLICHE FRAGE 1 ---
 elif st.session_state.step == 5:
     st.subheader("Frage 1: Was ist das? 🔴")
-    q5_answer = st.radio("Sei ehrlich...", ["Ein roter Kreis ⭕", "Das offizielle Baybell Emoji 🔴", "Ein roter Ball 🏀","Keine Ahnung ❓"], index=None)
+    q5_answer = st.radio("Sei ehrlich...", ["Ein roter Kreis ⭕", "Das offizielle Babybel Emoji 🔴", "Ein roter Ball 🏀","Keine Ahnung ❓"], index=None)
 
     if st.button("Bestätigen"):
         if q5_answer == "Das offizielle Babybel Emoji 🔴":
