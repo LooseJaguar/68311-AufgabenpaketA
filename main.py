@@ -126,7 +126,7 @@ elif st.session_state.step == 5:
     q5_answer = st.radio("Sei ehrlich...", ["Ein roter Kreis ⭕", "Das offizielle Baybell Emoji 🔴", "Ein roter Ball 🏀","Keine Ahnung ❓"], index=None)
 
     if st.button("Bestätigen"):
-        if q5_answer == "Das offizielle Baybell Emoji 🔴":
+        if q5_answer == "Das offizielle Babybel Emoji 🔴":
             st.success("Richtig. Das weiß doch jeder. 🏆")
             time.sleep(4);
             st.session_state.step = 6;
@@ -158,7 +158,7 @@ elif st.session_state.step == 7:
 
     if st.button("Bestätigen"):
         if q7_answer == "In den Weinbergen von Hochheim 🍇":  # Tausche dies mit eurer echten Antwort aus!
-            st.success("Ich wusste es! Das war seeeeeerh schön. 🥰")
+            st.success("Ich wusste es! Das war seeeeeehr schön. 🥰")
             time.sleep(4);
             st.session_state.step = 8;
             st.rerun()
